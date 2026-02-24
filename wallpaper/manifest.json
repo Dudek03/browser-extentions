@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "wallpaper",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "contextMenus",
+        "tabs"
+    ],
+    "host_permissions": [
+        "https://*/*",
+        "http://*/*"
+    ],
+    "description": "Enable focus mode on Chrome's official Extensions and Chrome Web Store documentation.",
+    "version": "1.0",
+    "background": {
+        "service_worker": "wallpaper.js"
+    }
+}

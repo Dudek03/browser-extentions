@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "video speed change",
+  "permissions": ["activeTab", "scripting"],
+  "description": "Enables user to speed up video up to x4 in 0.25 increments",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "images/favicon-16.png",
+      "32": "images/favicon-32.png",
+      "128": "images/favicon-128.png"
+    }
+  }
+}
+
