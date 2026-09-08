@@ -1,27 +1,69 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    background-color: darkgray;
-    align-content: center;
-    justify-content: center;
+  background-color: #121214;
+  color: #e4e4e7;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  user-select: none;
 }
 
-main {
-    display: flex;
-    width: 80vw;
-    height: 80vh;
-    font-size: 15rem;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-    justify-content: center;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.controls-hint {
+  font-size: 0.85rem;
+  color: #71717a;
+}
+
+.reader-box {
+  position: relative;
+  width: 460px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #27272a;
+  border-bottom: 1px solid #27272a;
+}
+
+.marker {
+  position: absolute;
+  left: 45%; /* Punkt fiksacji wzroku */
+  width: 2px;
+  height: 10px;
+  background-color: #ef4444;
+}
+
+.top-marker { top: 0; }
+.bottom-marker { bottom: 0; }
+
+#wordDiv {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Wyróżniona litera (ORP) */
+.highlight {
+  color: #ef4444;
+}
+
+.status-bar {
+  display: flex;
+  gap: 24px;
+  font-size: 0.95rem;
+  color: #a1a1aa;
 }

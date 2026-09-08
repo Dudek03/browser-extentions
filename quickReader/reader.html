@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8" />
@@ -9,8 +9,23 @@
 </head>
 
 <body>
-    <main id="wordDiv">siema</main>
-    <script src="reader.js" />
+    <div class="container">
+        <div class="controls-hint">Spacja: Start / Pauza | Strzałki ↑ / ↓: Szybkość</div>
+
+        <div class="reader-box">
+            <!-- Linie celownicze ułatwiające fiksację wzroku -->
+            <div class="marker top-marker"></div>
+            <main id="wordDiv">Gotowy?</main>
+            <div class="marker bottom-marker"></div>
+        </div>
+
+        <div class="status-bar">
+            <span id="wpmDisplay">300 WPM</span>
+            <span id="progressDisplay">0 / 0</span>
+        </div>
+    </div>
+
+    <script src="reader.js"></script>
 </body>
 
 </html>
